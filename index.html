@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="js/index.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+
+    <div class="main-report">
+      <div class="condition">condition</div>
+      <div class="place">place</div>
+      <div class="country">country</div>
+      <div class="dateTime">
+        <div class="date">date</div>
+        <div class="time">time</div>
+      </div>
+
+      <div class="temp-report">
+        <div class="temperature">TEMP</div>
+      </div>
+
+      <div class="image-container">
+        <img src="" alt="" class="image" />
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-field"
+          placeholder="Search your city..."
+        />
+        <button class="search-icon">
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </button>
+        <div class="error-message">
+          Location not found. Search must be in the form of "City", "City,
+          State" or "City, Country".
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-report">
+      <div>
+        <img src="assets/feels-like.png" alt="" class="icons" />
+        <span class="feel">Feel</span>
+      </div>
+      <div>
+        <img src="assets/humidity.png" alt="" class="icons" />
+        <span class="humidity">Humidity</span>
+      </div>
+      <div>
+        <img src="assets/rain.png" alt="" class="icons" />
+        <span class="rain">Chances of Rain</span>
+      </div>
+      <div>
+        <img src="assets/wind.png" alt="" class="icons" />
+        <span class="wind">Wind Speed</span>
+      </div>
+    </div>
+  </body>
+</html>
